@@ -39,7 +39,11 @@ app.get('/',(req,res)=>{
       welcomeMessage:'welcome to my website'
     });
 });
-
+app.get('/projects',(req,res)=>{
+    res.render('project.hbs',{
+        pageTitle:'Project'
+    });
+});
 
 
 
